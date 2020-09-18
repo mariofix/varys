@@ -3,9 +3,14 @@ name = "varys"
 version = "0.1.0"
 description = ""
 authors = ["Mario Hernandez <mariofix@pm.me>"]
+license = "MIT"
+readme = "README.md"
+homepage = "http://mariofix.github.io/varys"
+repository = "http://github.com/mariofix/varys"
+documentation = "http://mariofix.github.io/varys/docs"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.6"
 requests = "^2.24.0"
 
 [tool.poetry.dev-dependencies]
