@@ -20,12 +20,3 @@ class Diputado(Ciudadano):
     militancia_actual: Optional[str] = None
     militancias_periodo: Optional[str] = None
     email: Optional[str] = None
-
-
-@dataclass
-class Senador(Ciudadano):
-    id: int = 0
-    activo: int = 0
-    circunscripcion: int = 0
-    region: Optional[str] = None
-    periodo: int = 0
