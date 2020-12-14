@@ -10,12 +10,15 @@ repository = "http://github.com/mariofix/varys"
 documentation = "http://mariofix.github.io/varys/docs"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.6.1"
 requests = "^2.24.0"
 dataclasses = { version = "*", python = "3.6" }
 zeep = "^3.4.0"
 columnar = "^1.3.1"
 click = "^7.1.2"
+pandas = "^1.1.5"
+html5lib = "^1.1"
+beautifulsoup4 = "^4.9.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0"

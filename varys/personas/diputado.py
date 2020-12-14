@@ -9,9 +9,10 @@ def lista(periodo=None):
         lista = api.getDiputados_Vigentes()
     ret = []
     for d in lista:
+        apellidos = f"{d['Apellido_Paterno']} {d['Apellido_Materno']}".strip()
         dip = Diputado(
             nombres=f"{d['Nombre']} {d['Nombre2']}".strip(),
-            apellidos=f"{d['Apellido_Paterno']} {d['Apellido_Materno']}".strip(),
+            apellidos=apellidos,
             id=int(d["DIPID"]),
             fecha_nacimiento=d["Fecha_Nacimiento"],
             fecha_defuncion=d["Fecha_Defuncion"],
